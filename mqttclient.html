@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MQTT Client & UDP Bridge</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #000;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy for MQTT Client & UDP Bridge</h1>
+    
+    <p>This application operates as a network utility tool on your device.</p>
+
+    <h2>1. Data Collection</h2>
+    <p>The developer does <strong>NOT</strong> collect, store, or transmit any personal user data or usage analytics to external servers.</p>
+    <p>All MQTT and UDP traffic is processed strictly in RAM and routed solely between the endpoints configured by the user (the MQTT Broker and UDP peers). Messages are logged locally on the screen for debugging purposes only.</p>
+
+    <h2>2. Permissions</h2>
+    <ul>
+        <li>
+            <strong>Network / Internet:</strong> Used solely to establish TCP connections to the user-defined MQTT Broker and to listen for/send UDP packets on the local network.
+        </li>
+        <li>
+            <strong>Foreground Service:</strong> Used to keep the network sockets active and the bridging logic running when the application is minimized or in the background.
+        </li>
+        <li>
+            <strong>Wake Lock:</strong> Used to prevent the Android Operating System from putting the CPU to sleep, which would terminate active network connections.
+        </li>
+    </ul>
+
+    <h2>3. Logs</h2>
+    <p>Data logs displayed within the application interface are temporary, stored only in volatile memory, and are permanently deleted when the application is closed.</p>
+
+    <div class="footer">
+        <p>&copy; 2025 MQTT Client & UDP Bridge</p>
+    </div>
+
+</body>
+</html>
